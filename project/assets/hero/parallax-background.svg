@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Wiener Prater Hintergrund">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1A1310"></stop>
+      <stop offset="30%" stop-color="#2A1B12"></stop>
+      <stop offset="60%" stop-color="#5C2410"></stop>
+      <stop offset="85%" stop-color="#B84418"></stop>
+      <stop offset="100%" stop-color="#E5A60D"></stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="#E5A60D" stop-opacity="0.55"></stop>
+      <stop offset="55%" stop-color="#B84418" stop-opacity="0.20"></stop>
+      <stop offset="100%" stop-color="#1A1310" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="star" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F6EEDC" stop-opacity="0.9"></stop>
+      <stop offset="60%" stop-color="#F6EEDC" stop-opacity="0.2"></stop>
+      <stop offset="100%" stop-color="#F6EEDC" stop-opacity="0"></stop>
+    </radialGradient>
+    <pattern id="grain" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="transparent"></rect>
+      <circle cx="20" cy="40" r="0.6" fill="#F6EEDC" opacity="0.06"></circle>
+      <circle cx="120" cy="160" r="0.4" fill="#F6EEDC" opacity="0.05"></circle>
+      <circle cx="60" cy="110" r="0.5" fill="#F6EEDC" opacity="0.05"></circle>
+      <circle cx="180" cy="60" r="0.7" fill="#F6EEDC" opacity="0.04"></circle>
+    </pattern>
+  </defs>
+
+  
+  <rect width="1920" height="1080" fill="url(#sky)"></rect>
+  <rect width="1920" height="1080" fill="url(#glow)"></rect>
+
+  
+  <g fill="#F6EEDC">
+    <circle cx="180" cy="90" r="1.6" opacity="0.7"></circle>
+    <circle cx="420" cy="160" r="1.0" opacity="0.5"></circle>
+    <circle cx="760" cy="60" r="1.4" opacity="0.6"></circle>
+    <circle cx="1100" cy="120" r="1.2" opacity="0.55"></circle>
+    <circle cx="1430" cy="80" r="1.6" opacity="0.7"></circle>
+    <circle cx="1700" cy="180" r="0.9" opacity="0.4"></circle>
+    <circle cx="300" cy="240" r="0.8" opacity="0.35"></circle>
+    <circle cx="1280" cy="220" r="0.9" opacity="0.4"></circle>
+    <circle cx="1820" cy="300" r="1.1" opacity="0.5"></circle>
+  </g>
+
+  
+  <g fill="#0F0A07" opacity="0.85">
+    <polygon points="0,720 0,640 80,640 100,620 140,620 160,640 220,640 240,610 280,610 300,630 360,630 380,600 420,600 440,640 520,640 540,615 600,615 620,640 700,640 720,610 780,610 800,640 880,640 900,605 950,605 970,640 1050,640 1080,620 1130,620 1160,640 1240,640 1260,615 1320,615 1340,640 1420,640 1440,605 1500,605 1520,640 1600,640 1620,610 1700,610 1720,640 1820,640 1840,620 1920,620 1920,1080 0,1080"></polygon>
+  </g>
+
+  
+  <g transform="translate(1400, 470)" stroke="#F6EEDC" fill="none" opacity="0.7" stroke-linecap="round">
+    <circle cx="0" cy="0" r="180" stroke-width="2.5"></circle>
+    <circle cx="0" cy="0" r="6" fill="#F6EEDC"></circle>
+    <g stroke-width="1.5">
+      <line x1="0" y1="-180" x2="0" y2="180"></line>
+      <line x1="-180" y1="0" x2="180" y2="0"></line>
+      <line x1="-127" y1="-127" x2="127" y2="127"></line>
+      <line x1="127" y1="-127" x2="-127" y2="127"></line>
+      <line x1="-69" y1="-166" x2="69" y2="166"></line>
+      <line x1="69" y1="-166" x2="-69" y2="166"></line>
+      <line x1="-166" y1="-69" x2="166" y2="69"></line>
+      <line x1="166" y1="-69" x2="-166" y2="69"></line>
+    </g>
+    
+    <g fill="#E5A60D" opacity="0.9">
+      <rect x="-12" y="-194" width="24" height="14" rx="3"></rect>
+      <rect x="-12" y="180" width="24" height="14" rx="3"></rect>
+      <rect x="-194" y="-7" width="14" height="24" rx="3"></rect>
+      <rect x="180" y="-7" width="14" height="24" rx="3"></rect>
+    </g>
+    <g fill="#BD1F1F" opacity="0.9">
+      <rect x="-138" y="-141" width="22" height="14" rx="3" transform="rotate(-45 -127 -127)"></rect>
+      <rect x="116" y="-141" width="22" height="14" rx="3" transform="rotate(45 127 -127)"></rect>
+      <rect x="-138" y="120" width="22" height="14" rx="3" transform="rotate(45 -127 127)"></rect>
+      <rect x="116" y="120" width="22" height="14" rx="3" transform="rotate(-45 127 127)"></rect>
+    </g>
+    <line x1="-90" y1="200" x2="-30" y2="180" stroke-width="3"></line>
+    <line x1="90" y1="200" x2="30" y2="180" stroke-width="3"></line>
+  </g>
+
+  
+  <g fill="#0A0605" opacity="0.92">
+    <path d="M 100,780 L 240,780 L 230,720 L 210,700 L 160,690 L 130,710 L 110,730 Z"></path>
+    <rect x="160" y="780" width="30" height="60"></rect>
+    <path d="M 280,790 L 460,790 L 450,710 L 420,680 L 360,672 L 320,680 L 295,710 Z"></path>
+    <rect x="350" y="790" width="40" height="60"></rect>
+    <path d="M 520,800 L 680,800 L 670,740 L 640,720 L 580,710 L 540,720 Z"></path>
+    <rect x="580" y="800" width="40" height="50"></rect>
+  </g>
+
+  
+  <rect y="700" width="1920" height="80" fill="url(#glow)" opacity="0.4"></rect>
+
+  
+  <rect y="780" width="1920" height="300" fill="#0A0605"></rect>
+
+  
+  <g fill="#1A1310" opacity="0.5">
+    <ellipse cx="200" cy="900" rx="50" ry="6"></ellipse>
+    <ellipse cx="500" cy="920" rx="80" ry="7"></ellipse>
+    <ellipse cx="900" cy="940" rx="120" ry="8"></ellipse>
+    <ellipse cx="1400" cy="960" rx="180" ry="10"></ellipse>
+    <ellipse cx="1800" cy="980" rx="160" ry="9"></ellipse>
+  </g>
+
+  
+  <rect width="1920" height="1080" fill="url(#grain)"></rect>
+</svg>

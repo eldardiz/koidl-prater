@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Koidl's Prater — Rein ins Vergnügen</title>
+<meta name="description" content="14 Attraktionen, eine Bar, mitten im Wiener Prater. Seit Generationen." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+
+<!-- ════════ NAVBAR ════════ -->
+<header class="nav-wrap" data-screen-label="00 Nav">
+  <nav class="nav-pill" aria-label="Hauptnavigation">
+    <a href="#top" class="nav-logo" aria-label="Koidl's Prater Startseite">
+      <img src="assets/logo/koidls-prater-logo.png" alt="Koidl's Wiener Prater" class="nav-logo-img" />
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#attraktionen">Attraktionen</a></li>
+      <li><a href="#bar">Bar</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <span class="nav-lang" aria-label="Sprache">DE</span>
+      <a href="#attraktionen" class="btn btn-red nav-cta">
+        Tickets
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" data-screen-label="01 Hero" id="hero">
+  <!-- z-0: hero video -->
+  <video
+    id="hero-video"
+    class="hero-video"
+    src="assets/hero/hero-motion.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"></video>
+
+  <!-- z-30: text-legibility gradient -->
+  <div class="hero-legibility" aria-hidden="true"></div>
+
+  <!-- Floating sparks -->
+  <svg class="hero-spark hero-spark-1" viewBox="0 0 40 40" aria-hidden="true">
+    <path d="M20 2 L22 18 L38 20 L22 22 L20 38 L18 22 L2 20 L18 18 Z" fill="#E5A60D"/>
+  </svg>
+  <svg class="hero-spark hero-spark-2" viewBox="0 0 40 40" aria-hidden="true">
+    <path d="M20 2 L22 18 L38 20 L22 22 L20 38 L18 22 L2 20 L18 18 Z" fill="#F6EEDC"/>
+  </svg>
+
+  <!-- z-40: text content -->
+  <div class="hero-content">
+    <span class="script-eyebrow script-eyebrow-light reveal" data-delay="0">
+      <span class="dot"></span>Seit über 100 Jahren im Wiener Prater
+    </span>
+
+    <h1 class="hero-h1">
+      <span class="reveal" data-delay="100">Rein ins</span>
+      <span class="reveal hero-italic" data-delay="200"><em>Vergnügen.</em></span>
+    </h1>
+
+    <p class="hero-sub reveal" data-delay="350">
+      14 Attraktionen. Eine Bar. Cocktails, Loops und eine Aussicht,<br />
+      die seit 1897 niemand vergisst.
+    </p>
+
+    <div class="hero-ctas reveal" data-delay="500">
+      <a href="#attraktionen" class="btn btn-red btn-lg">
+        Attraktionen entdecken
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#bar" class="link-ghost-light">Bar &amp; Events <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="hero-status reveal" data-delay="700">
+      <span class="status-dot"></span>
+      <span><strong>Heute geöffnet.</strong> 10:00 – 22:00 Uhr</span>
+      <span class="status-sep">·</span>
+      <span>Wetter: 14° und trocken</span>
+    </div>
+  </div>
+
+  <!-- z-45: audio toggle (bottom-right) -->
+  <button type="button" id="audio-toggle" class="audio-toggle is-muted is-hinting" aria-pressed="false" aria-label="Ton einschalten">
+    <span class="audio-toggle-icon" aria-hidden="true">
+      <!-- VolumeX (muted state, default) -->
+      <svg class="icon-mute" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
+      <!-- Volume2 (playing state) -->
+      <svg class="icon-unmute" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+    </span>
+    <span class="audio-toggle-label">Ton an</span>
+  </button>
+
+  <!-- z-50: cream fade-out at hero bottom -->
+  <div class="hero-cream-fade" aria-hidden="true"></div>
+
+  <!-- Marquee strip at hero bottom -->
+  <div class="hero-marquee">
+    <div class="marquee-track">
+      <span>Rein ins Vergnügen</span><span class="m-spark">✦</span>
+      <span>14 Attraktionen</span><span class="m-spark">✦</span>
+      <span>Abenteuer · Tradition · Wiener Charme</span><span class="m-spark">✦</span>
+      <span>Bar im Prater</span><span class="m-spark">✦</span>
+      <span>Rein ins Vergnügen</span><span class="m-spark">✦</span>
+      <span>14 Attraktionen</span><span class="m-spark">✦</span>
+      <span>Abenteuer · Tradition · Wiener Charme</span><span class="m-spark">✦</span>
+      <span>Bar im Prater</span><span class="m-spark">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ INTRO ════════ -->
+<section class="intro" data-screen-label="02 Intro">
+  <div class="intro-orn intro-orn-l" aria-hidden="true">
+    <svg viewBox="0 0 120 120" width="120" height="120">
+      <g class="spin-slow" style="transform-origin:60px 60px">
+        <circle cx="60" cy="60" r="46" fill="none" stroke="#B81E1E" stroke-width="1.4"/>
+        <circle cx="60" cy="60" r="6" fill="#B81E1E"/>
+        <g stroke="#B81E1E" stroke-width="1">
+          <line x1="60" y1="14" x2="60" y2="106"/>
+          <line x1="14" y1="60" x2="106" y2="60"/>
+          <line x1="27" y1="27" x2="93" y2="93"/>
+          <line x1="93" y1="27" x2="27" y2="93"/>
+        </g>
+        <g fill="#B81E1E">
+          <circle cx="60" cy="14" r="3"/>
+          <circle cx="60" cy="106" r="3"/>
+          <circle cx="14" cy="60" r="3"/>
+          <circle cx="106" cy="60" r="3"/>
+          <circle cx="27" cy="27" r="3"/>
+          <circle cx="93" cy="93" r="3"/>
+          <circle cx="93" cy="27" r="3"/>
+          <circle cx="27" cy="93" r="3"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="intro-orn intro-orn-r" aria-hidden="true">
+    <svg viewBox="0 0 120 60" width="180" height="90">
+      <path d="M5 50 Q 30 5, 60 30 T 115 20" fill="none" stroke="#B81E1E" stroke-width="1.5" stroke-dasharray="4 6"/>
+      <circle cx="5" cy="50" r="3" fill="#B81E1E"/>
+      <circle cx="115" cy="20" r="3" fill="#B81E1E"/>
+    </svg>
+  </div>
+
+  <div class="intro-inner">
+    <span class="script-eyebrow reveal">
+      <span class="dot dot-red"></span>Drei Worte, ein Ort
+    </span>
+    <h2 class="display-h2 reveal" data-delay="120">
+      Abenteuer, <em>Tradition</em> und Wiener Charme.<br />
+      Alle Sinne fordern, an einem Ort.
+    </h2>
+    <div class="intro-stats reveal" data-delay="300">
+      <div class="stat">
+        <span class="stat-num">14</span>
+        <span class="stat-label">Attraktionen</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100<span class="stat-suffix">+</span></span>
+        <span class="stat-label">Jahre Familienbetrieb</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Bar mit Bio-Kaffee</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ATTRACTIONS GRID ════════ -->
+<section class="attractions" id="attraktionen" data-screen-label="03 Attraktionen">
+  <div class="section-head">
+    <div>
+      <span class="script-eyebrow"><span class="dot dot-red"></span>Was geht heute?</span>
+      <h2 class="display-h2 attractions-h2">Attraktionen.</h2>
+    </div>
+    <div class="section-head-meta">
+      <span class="count">14 Highlights</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-muted">Stand: heute, 14:00 Uhr</span>
+    </div>
+  </div>
+
+  <div class="filter-row" role="tablist" aria-label="Attraktionen filtern">
+    <button class="pill is-active" data-filter="alle" role="tab" aria-selected="true">
+      Alle <span class="pill-num">14</span>
+    </button>
+    <button class="pill" data-filter="adrenalin" role="tab" aria-selected="false">
+      Adrenalin <span class="pill-num">7</span>
+    </button>
+    <button class="pill" data-filter="family" role="tab" aria-selected="false">
+      Family <span class="pill-num">2</span>
+    </button>
+    <button class="pill" data-filter="kinder" role="tab" aria-selected="false">
+      Kinder <span class="pill-num">5</span>
+    </button>
+    <div class="filter-progress" aria-hidden="true">
+      <span class="filter-progress-fill"></span>
+    </div>
+  </div>
+
+  <ol class="cards" id="cards-grid">
+    <!-- Adrenalin -->
+    <li class="card card-feature" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media">
+          <img src="assets/attractions/wiener-looping.jpg" alt="Wiener Looping Achterbahn im Wiener Prater" loading="lazy" />
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Wiener Looping</h3>
+          <p class="card-desc">Der Klassiker. 360°-Loops und freier Fall mit Blick über den Prater.</p>
+          <span class="card-meta">3 Inversionen · ab 130cm</span>
+        </div>
+        <span class="card-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media">
+          <img src="assets/attractions/break-dance.jpg" alt="Break Dance Fahrgeschäft" loading="lazy" />
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Break Dance</h3>
+          <p class="card-desc">Wirbeln, drehen, lachen. Die Schwerkraft kann warten.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media art-airmaxx">
+          <div class="card-art" data-glyph="A"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Air Maxx</h3>
+          <p class="card-desc">60 Meter hoch. Ein Wimpernschlag bis nach unten.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media art-freifall">
+          <div class="card-art" data-glyph="F"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Wiener Freifallturm</h3>
+          <p class="card-desc">Ganz oben atmen. Ganz unten schreien.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media art-insider">
+          <div class="card-art" data-glyph="I"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Insider</h3>
+          <p class="card-desc">Indoor-Achterbahn. Kein Tageslicht, kein Vorwarnen.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media art-volare">
+          <div class="card-art" data-glyph="V"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Volare</h3>
+          <p class="card-desc">Fliegen wie im Flugzeug. Nur ehrlicher.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="adrenalin">
+      <a href="#" class="card-link">
+        <div class="card-media">
+          <img src="assets/attractions/monza-grand-prix.jpg" alt="Monza Grand Prix Autodrom" loading="lazy" />
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-adrenalin">Adrenalin</span>
+          <h3 class="card-title">Monza Grand Prix</h3>
+          <p class="card-desc">Gas geben, Reifen quietschen, Familienrennen.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <!-- Family -->
+    <li class="card" data-cat="family">
+      <a href="#" class="card-link">
+        <div class="card-media">
+          <img src="assets/attractions/blumenrad.jpg" alt="Blumenrad Riesenrad im Wiener Prater" loading="lazy" />
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-family">Family</span>
+          <h3 class="card-title">Blumenrad</h3>
+          <p class="card-desc">Das Riesenrad mit der besseren Aussicht.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="family">
+      <a href="#" class="card-link">
+        <div class="card-media art-karussell">
+          <div class="card-art" data-glyph="K"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-family">Family</span>
+          <h3 class="card-title">Wiener Prater Karussell</h3>
+          <p class="card-desc">Tradition seit über 100 Jahren. Immer noch das schönste.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <!-- Kinder -->
+    <li class="card" data-cat="kinder">
+      <a href="#" class="card-link">
+        <div class="card-media art-autodrom">
+          <div class="card-art" data-glyph="K"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-kinder">Kinder</span>
+          <h3 class="card-title">Kinderautodrom</h3>
+          <p class="card-desc">Erste Fahrstunde. Beste Fahrstunde.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="kinder">
+      <a href="#" class="card-link">
+        <div class="card-media art-sombrero">
+          <div class="card-art" data-glyph="S"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-kinder">Kinder</span>
+          <h3 class="card-title">Sombrero</h3>
+          <p class="card-desc">Drehen, kichern, wiederholen.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="kinder">
+      <a href="#" class="card-link">
+        <div class="card-media">
+          <img src="assets/attractions/zug-des-manitu.jpg" alt="Zug des Manitu Geisterbahn" loading="lazy" />
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-kinder">Kinder</span>
+          <h3 class="card-title">Zug des Manitu</h3>
+          <p class="card-desc">Auf Schienen durch den wilden Westen.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="kinder">
+      <a href="#" class="card-link">
+        <div class="card-media">
+          <img src="assets/attractions/jolly-joker.jpg" alt="Jolly Joker Amusement Station" loading="lazy" />
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-kinder">Kinder</span>
+          <h3 class="card-title">Jolly Joker</h3>
+          <p class="card-desc">Hüpfen, lachen, nochmal von vorn.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+
+    <li class="card" data-cat="kinder">
+      <a href="#" class="card-link">
+        <div class="card-media art-geisterbahn">
+          <div class="card-art" data-glyph="G"></div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag tag-kinder">Kinder</span>
+          <h3 class="card-title">Große Geisterbahn</h3>
+          <p class="card-desc">Gruselig genug. Nicht zu gruselig.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+      </a>
+    </li>
+  </ol>
+
+  <div class="cards-foot reveal">
+    <a href="#" class="link-arrow">Alle Attraktionen ansehen <span aria-hidden="true">→</span></a>
+    <span class="cards-foot-note">Aktualisiert für Saison 2026</span>
+  </div>
+</section>
+
+<!-- ════════ FEATURED ════════ -->
+<section class="featured" data-screen-label="04 Featured">
+  <div class="featured-frame reveal">
+    <img src="assets/attractions/wiener-looping.jpg" alt="Wiener Looping bei Nacht" class="featured-img" />
+    <div class="featured-art" aria-hidden="true"></div>
+    <div class="featured-gradient"></div>
+
+    <div class="featured-badge">
+      <span class="badge-dot"></span>Highlight der Saison
+    </div>
+
+    <div class="featured-overlay">
+      <div class="featured-card">
+        <span class="script-eyebrow script-eyebrow-light"><span class="dot"></span>Neu seit 2025</span>
+        <h3 class="featured-title">Wiener <em>Looping</em></h3>
+        <p class="featured-body">
+          Der Klassiker, der den Prater zum Prater macht.<br />
+          92° Gefälle, drei Inversionen, die beste Aussicht der Stadt.<br />
+          Nichts für schwache Nerven. Genau deshalb so gut.
+        </p>
+        <dl class="featured-specs">
+          <div><dt>Gefälle</dt><dd>92°</dd></div>
+          <div><dt>Inversionen</dt><dd>3</dd></div>
+          <div><dt>Mindestgröße</dt><dd>130 cm</dd></div>
+          <div><dt>Preis</dt><dd>10 €</dd></div>
+        </dl>
+      </div>
+      <a href="#" class="btn btn-cream btn-lg featured-cta">
+        Mehr erfahren
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ BAR & EVENTS ════════ -->
+<section class="bar" id="bar" data-screen-label="05 Bar">
+  <div class="bar-inner">
+    <div class="bar-head">
+      <span class="script-eyebrow"><span class="dot dot-red"></span>Die andere Hälfte</span>
+      <h2 class="display-h2 bar-h2">
+        Nach den Fahrgeschäften.<br />
+        <em>Die Bar.</em>
+      </h2>
+    </div>
+
+    <div class="bar-grid">
+      <div class="bar-media reveal">
+        <div class="bar-photo">
+          <div class="bar-photo-art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" width="100%" height="100%" preserveAspectRatio="none">
+              <defs>
+                <radialGradient id="bg1" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#E5A60D" stop-opacity="0.95"/>
+                  <stop offset="55%" stop-color="#B81E1E" stop-opacity="0.95"/>
+                  <stop offset="100%" stop-color="#5C0F0E" stop-opacity="1"/>
+                </radialGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#bg1)"/>
+              <circle cx="100" cy="80" r="56" fill="none" stroke="#F6EEDC" stroke-width="0.8" opacity="0.55"/>
+              <circle cx="100" cy="80" r="40" fill="none" stroke="#F6EEDC" stroke-width="0.6" opacity="0.4"/>
+              <circle cx="100" cy="80" r="24" fill="none" stroke="#F6EEDC" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="bar-photo-foreground">
+            <div class="bar-roundel">
+              <svg viewBox="0 0 200 200" width="100%" height="100%">
+                <defs>
+                  <path id="circlePathTop" d="M 100,100 m -80,0 a 80,80 0 1,1 160,0"/>
+                  <path id="circlePathBot" d="M 100,100 m 80,0 a 80,80 0 1,1 -160,0"/>
+                </defs>
+                <circle cx="100" cy="100" r="92" fill="none" stroke="#F6EEDC" stroke-width="1.4"/>
+                <circle cx="100" cy="100" r="78" fill="none" stroke="#F6EEDC" stroke-width="0.6" opacity="0.55"/>
+                <text font-family="'Instrument Serif', serif" font-size="20" fill="#F6EEDC" letter-spacing="4">
+                  <textPath href="#circlePathTop" startOffset="50%" text-anchor="middle">BAR IM PRATER</textPath>
+                </text>
+                <text font-family="'Instrument Serif', serif" font-style="italic" font-size="18" fill="#F6EEDC" letter-spacing="2">
+                  <textPath href="#circlePathBot" startOffset="50%" text-anchor="middle">seit 2019</textPath>
+                </text>
+                <g font-family="'Instrument Serif', serif" fill="#F6EEDC" text-anchor="middle">
+                  <text x="100" y="92" font-size="36" letter-spacing="2">BAR</text>
+                  <line x1="80" y1="104" x2="120" y2="104" stroke="#F6EEDC" stroke-width="1"/>
+                  <text x="100" y="132" font-size="22" font-style="italic">im Prater</text>
+                </g>
+              </svg>
+            </div>
+            <div class="bar-photo-chip">
+              <span class="chip-dot"></span>Heute offen bis 02:00
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bar-text">
+        <div class="bar-block reveal">
+          <span class="script-eyebrow script-eyebrow-sm"><span class="dot dot-red"></span>Cocktails &amp; Bio-Kaffee</span>
+          <p class="bar-body">
+            Bio-zertifiziert. Open-Air. Mitten im Trubel des Praters,
+            und doch ein Moment für sich. Cocktails, die zur Stimmung
+            passen. Kaffee, der den Tag rettet.
+          </p>
+          <ul class="bar-list" role="list">
+            <li><span class="bar-bullet"></span>15 Signature Cocktails</li>
+            <li><span class="bar-bullet"></span>100% Bio-Kaffee (Wiener Rösterei)</li>
+            <li><span class="bar-bullet"></span>Heißer Apfelpunsch im Herbst</li>
+          </ul>
+        </div>
+
+        <div class="bar-divider" aria-hidden="true"></div>
+
+        <div class="bar-block reveal" data-delay="150">
+          <span class="script-eyebrow script-eyebrow-sm"><span class="dot dot-red"></span>Firmenfeiern &amp; Events</span>
+          <p class="bar-body">
+            Vom Geburtstag bis zur Firmenfeier. Wir bauen euch eine
+            Nacht, die hängen bleibt. Eigene Location, eigenes Team,
+            eigene Drinks-Karte. Auf Anfrage mit Catering.
+          </p>
+          <div class="bar-cta-row">
+            <a href="#kontakt" class="btn btn-red">
+              Event anfragen
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+            <a href="#packages" class="link-arrow link-arrow-sm">Packages ansehen <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MAP ════════ -->
+<section class="map" data-screen-label="06 Map">
+  <div class="map-head">
+    <span class="script-eyebrow script-eyebrow-light"><span class="dot"></span>Lageplan</span>
+    <h2 class="display-h2 map-h2">Wo gibt's was im <em>Wiener Prater</em>?</h2>
+    <p class="map-sub">Prater 13A, 1020 Wien. Direkt beim Riesenrad-Eingang.</p>
+  </div>
+
+  <div class="map-frame reveal">
+    <img src="assets/map/PLAN_Website_02.jpg" alt="Lageplan der Attraktionen im Wiener Prater" class="map-img" />
+
+    <!-- Decorative marker pins -->
+    <div class="map-pins" aria-hidden="true">
+      <span class="map-pin map-pin-1"><span class="pin-ring"></span><span class="pin-label">Wiener Looping</span></span>
+      <span class="map-pin map-pin-2"><span class="pin-ring"></span><span class="pin-label">Blumenrad</span></span>
+      <span class="map-pin map-pin-3"><span class="pin-ring"></span><span class="pin-label">Bar im Prater</span></span>
+    </div>
+  </div>
+
+  <div class="map-foot reveal">
+    <a href="https://maps.google.com/?q=Prater+13A+1020+Wien" class="link-arrow">In Google Maps öffnen <span aria-hidden="true">→</span></a>
+    <span class="map-foot-meta">U1 / U2 Praterstern · 5 Min Fußweg</span>
+  </div>
+</section>
+
+<!-- ════════ PRACTICAL INFO ════════ -->
+<section class="practical" data-screen-label="07 Praktisches">
+  <div class="practical-head">
+    <span class="script-eyebrow"><span class="dot dot-red"></span>Praktisches</span>
+    <h2 class="display-h2 practical-h2">Drei Antworten,<br />bevor ihr fragt.</h2>
+  </div>
+
+  <div class="practical-grid">
+    <article class="info-card reveal">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      </div>
+      <span class="info-num">01</span>
+      <h3 class="info-title">Öffnungszeiten</h3>
+      <dl class="info-list">
+        <div><dt>Saison</dt><dd>1. Mai bis 31. Oktober</dd></div>
+        <div><dt>Täglich</dt><dd>10:00 – 22:00</dd></div>
+        <div><dt>Bar</dt><dd>bis 02:00</dd></div>
+      </dl>
+      <p class="info-note">Wetterbedingt können einzelne Attraktionen früher schließen.</p>
+    </article>
+
+    <article class="info-card reveal" data-delay="120">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3v18"/><path d="M5 7h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V9a2 2 0 0 1 2-2z"/></svg>
+      </div>
+      <span class="info-num">02</span>
+      <h3 class="info-title">Tickets</h3>
+      <dl class="info-list">
+        <div><dt>Pro Fahrt</dt><dd>3 – 10 €</dd></div>
+        <div><dt>Kauf</dt><dd>direkt an der Kassa</dd></div>
+        <div><dt>Family</dt><dd>Pakete ab 25 €</dd></div>
+      </dl>
+      <p class="info-note">Keine Voranmeldung nötig. Karte oder Bargeld.</p>
+    </article>
+
+    <article class="info-card reveal" data-delay="240">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7-7.5-7-13a7 7 0 0 1 14 0c0 5.5-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      </div>
+      <span class="info-num">03</span>
+      <h3 class="info-title">Anreise</h3>
+      <dl class="info-list">
+        <div><dt>U-Bahn</dt><dd>U1 / U2 Praterstern</dd></div>
+        <div><dt>Fußweg</dt><dd>ca. 5 Minuten</dd></div>
+        <div><dt>Auto</dt><dd>Parkhaus Riesenrad</dd></div>
+      </dl>
+      <p class="info-note">Prater 13A, 1020 Wien, Österreich.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ════════ SOCIAL PROOF ════════ -->
+<section class="social" data-screen-label="08 Social Proof">
+  <div class="social-head reveal">
+    <span class="script-eyebrow"><span class="dot dot-red"></span>Gesehen bei</span>
+    <p class="social-sub">Wir sind im Fernsehen, im Film und an guten Tagen sogar in der Zeitung.</p>
+  </div>
+
+  <div class="logo-marquee" aria-label="Pressestimmen">
+    <div class="logo-track">
+      <span class="logo-item">ORF</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-cursive">Servus TV</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-mono">Puls 4</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-serif">Der Standard</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item">Kurier</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-cursive">Falter</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-mono">Heute</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-serif">Krone</span>
+      <span class="logo-dot">✦</span>
+      <!-- repeat -->
+      <span class="logo-item">ORF</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-cursive">Servus TV</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-mono">Puls 4</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-serif">Der Standard</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item">Kurier</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-cursive">Falter</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-mono">Heute</span>
+      <span class="logo-dot">✦</span>
+      <span class="logo-item logo-serif">Krone</span>
+      <span class="logo-dot">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CTA / TICKETS STRIP ════════ -->
+<section class="cta-strip" id="packages" data-screen-label="09 CTA">
+  <div class="cta-inner reveal">
+    <span class="script-eyebrow script-eyebrow-light"><span class="dot"></span>Reservierung</span>
+    <h2 class="cta-h2">Heute schon entschieden?<br /><em>Dann gleich rein.</em></h2>
+    <div class="cta-row">
+      <a href="#" class="btn btn-cream btn-lg">
+        Tickets sichern
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+      <a href="#bar" class="link-ghost-light">Bar reservieren <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="footer" id="kontakt" data-screen-label="10 Footer">
+  <div class="footer-grid">
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">
+        <img src="assets/logo/koidls-prater-logo.png" alt="Koidl's Wiener Prater" class="footer-logo-img" />
+      </div>
+      <p class="footer-addr">
+        Koidl Vergnügungsbetriebe<br />
+        Prater 13A<br />
+        1020 Wien, Österreich
+      </p>
+      <p class="footer-contact">
+        <a href="tel:+4317299876">+43 1 729 98 76</a><br />
+        <a href="mailto:hallo@koidls-prater.at">hallo@koidls-prater.at</a>
+      </p>
+      <div class="footer-social">
+        <a href="https://facebook.com/wienerpraterkoidls" aria-label="Facebook" class="soc-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 9V7.5c0-.83.67-1.5 1.5-1.5h2V3h-2.5A4.5 4.5 0 0 0 10 7.5V9H7v3h3v9h3.5v-9H16l.5-3h-3z"/></svg>
+        </a>
+        <a href="https://instagram.com/wienerpraterkoidls" aria-label="Instagram" class="soc-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-h4">Attraktionen</h4>
+      <ul class="footer-list" role="list">
+        <li><a href="#">Wiener Looping</a></li>
+        <li><a href="#">Break Dance</a></li>
+        <li><a href="#">Air Maxx</a></li>
+        <li><a href="#">Wiener Freifallturm</a></li>
+        <li><a href="#">Insider</a></li>
+        <li><a href="#">Volare</a></li>
+        <li><a href="#">Blumenrad</a></li>
+        <li><a href="#">Alle 14 <span aria-hidden="true">→</span></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-h4">Bar &amp; Events</h4>
+      <ul class="footer-list" role="list">
+        <li><a href="#bar">Bar im Prater</a></li>
+        <li><a href="#">Event anfragen</a></li>
+        <li><a href="#">Cocktail-Karte</a></li>
+        <li><a href="#">Bio-Kaffee</a></li>
+        <li><a href="#">Packages</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-h4">Haus</h4>
+      <ul class="footer-list" role="list">
+        <li><a href="#">Über uns</a></li>
+        <li><a href="#">Karriere</a></li>
+        <li><a href="#">Presse &amp; News</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">Stornobedingungen</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-base">
+    <span>© 2026 Koidl Vergnügungsbetriebe · Wiener Prater · gemacht mit <span class="heart">♥</span> in Wien</span>
+    <span class="footer-base-r">Pitch v1 · Stand Mai 2026</span>
+  </div>
+
+  <div class="footer-bigtype" aria-hidden="true">REIN INS VERGNÜGEN</div>
+</footer>
+
+</main>
+
+<script src="motion.js" defer></script>
+</body>
+</html>

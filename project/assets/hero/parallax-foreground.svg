@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Achterbahn Vordergrund">
+  <defs>
+    <linearGradient id="rail" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E55A4A"></stop>
+      <stop offset="60%" stop-color="#BD1F1F"></stop>
+      <stop offset="100%" stop-color="#5C0F0E"></stop>
+    </linearGradient>
+    <linearGradient id="cart" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E5A60D"></stop>
+      <stop offset="100%" stop-color="#A87104"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <g stroke="#1F1814" stroke-width="6" stroke-linecap="round" opacity="0.85" fill="none">
+    <line x1="1180" y1="1080" x2="1180" y2="540"></line>
+    <line x1="1180" y1="1080" x2="1110" y2="540"></line>
+    <line x1="1180" y1="540" x2="1110" y2="540" stroke-width="3"></line>
+
+    <line x1="1480" y1="1080" x2="1480" y2="280"></line>
+    <line x1="1480" y1="1080" x2="1410" y2="280"></line>
+    <line x1="1480" y1="280" x2="1410" y2="280" stroke-width="3"></line>
+
+    <line x1="1720" y1="1080" x2="1720" y2="480"></line>
+    <line x1="1720" y1="1080" x2="1650" y2="480"></line>
+
+    <line x1="900" y1="1080" x2="900" y2="700"></line>
+    <line x1="900" y1="1080" x2="830" y2="700"></line>
+  </g>
+
+  
+  <g stroke="#1F1814" stroke-width="3" opacity="0.7">
+    <line x1="900" y1="780" x2="1180" y2="640"></line>
+    <line x1="1180" y1="640" x2="1480" y2="380"></line>
+    <line x1="1480" y1="380" x2="1720" y2="540"></line>
+    <line x1="900" y1="900" x2="1180" y2="800"></line>
+    <line x1="1180" y1="800" x2="1480" y2="700"></line>
+    <line x1="1480" y1="700" x2="1720" y2="780"></line>
+  </g>
+
+  
+  <g fill="none" stroke="url(#rail)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="&#xA;      M -50,820&#xA;      C 180,820 380,810 600,790&#xA;      C 780,770 880,740 980,700&#xA;      C 1080,660 1140,610 1180,540&#xA;      C 1220,460 1240,360 1280,300&#xA;      C 1320,240 1380,200 1450,200&#xA;      C 1540,200 1620,260 1640,360&#xA;      C 1660,460 1620,540 1540,580&#xA;      C 1460,620 1380,600 1340,540&#xA;      C 1300,480 1320,400 1380,360&#xA;      C 1440,320 1520,340 1560,400&#xA;      M 1640,360&#xA;      C 1670,460 1690,520 1720,560&#xA;      C 1760,600 1830,630 1900,640&#xA;      L 1980,640&#xA;    "></path>
+    
+    <path d="&#xA;      M -50,840&#xA;      C 180,840 380,830 600,810&#xA;      C 780,790 880,760 980,720&#xA;      C 1080,680 1140,630 1180,560&#xA;      C 1220,480 1240,380 1280,320&#xA;      C 1320,260 1380,220 1450,220&#xA;      C 1540,220 1620,280 1640,380&#xA;      C 1660,480 1620,560 1540,600&#xA;      C 1460,640 1380,620 1340,560&#xA;      C 1300,500 1320,420 1380,380&#xA;      C 1440,340 1520,360 1560,420&#xA;      M 1640,380&#xA;      C 1670,480 1690,540 1720,580&#xA;      C 1760,620 1830,650 1900,660&#xA;      L 1980,660&#xA;    " opacity="0.6"></path>
+  </g>
+
+  
+  <g stroke="#1F1814" stroke-width="3" opacity="0.85">
+    <line x1="200" y1="822" x2="200" y2="842"></line>
+    <line x1="380" y1="816" x2="380" y2="836"></line>
+    <line x1="560" y1="800" x2="560" y2="820"></line>
+    <line x1="720" y1="784" x2="720" y2="804"></line>
+    <line x1="860" y1="760" x2="860" y2="780"></line>
+    <line x1="980" y1="710" x2="980" y2="730"></line>
+    <line x1="1080" y1="660" x2="1080" y2="680"></line>
+    <line x1="1160" y1="580" x2="1160" y2="600"></line>
+    <line x1="1220" y1="460" x2="1220" y2="480"></line>
+    <line x1="1280" y1="320" x2="1280" y2="340"></line>
+    <line x1="1380" y1="220" x2="1380" y2="240"></line>
+    <line x1="1500" y1="210" x2="1500" y2="230"></line>
+    <line x1="1620" y1="280" x2="1620" y2="300"></line>
+    <line x1="1640" y1="380" x2="1660" y2="380" transform="rotate(80 1650 380)"></line>
+  </g>
+
+  
+  <g transform="translate(1340,300) rotate(-32)">
+    <rect x="-86" y="-22" width="48" height="34" rx="6" fill="url(#cart)" stroke="#1F1814" stroke-width="2"></rect>
+    <rect x="-32" y="-22" width="48" height="34" rx="6" fill="url(#cart)" stroke="#1F1814" stroke-width="2"></rect>
+    <rect x="22" y="-22" width="48" height="34" rx="6" fill="url(#cart)" stroke="#1F1814" stroke-width="2"></rect>
+    
+    <circle cx="-76" cy="14" r="6" fill="#1F1814"></circle>
+    <circle cx="-44" cy="14" r="6" fill="#1F1814"></circle>
+    <circle cx="-22" cy="14" r="6" fill="#1F1814"></circle>
+    <circle cx="6" cy="14" r="6" fill="#1F1814"></circle>
+    <circle cx="32" cy="14" r="6" fill="#1F1814"></circle>
+    <circle cx="60" cy="14" r="6" fill="#1F1814"></circle>
+    
+    <g fill="#1F1814">
+      <circle cx="-62" cy="-12" r="5"></circle>
+      <circle cx="-8" cy="-12" r="5"></circle>
+      <circle cx="46" cy="-12" r="5"></circle>
+    </g>
+    
+    <g stroke="#F6EEDC" stroke-width="1.2" opacity="0.45" stroke-linecap="round">
+      <line x1="80" y1="-14" x2="130" y2="-12"></line>
+      <line x1="80" y1="-2" x2="120" y2="0"></line>
+      <line x1="80" y1="10" x2="116" y2="14"></line>
+    </g>
+  </g>
+
+  
+  <g fill="#E5A60D" opacity="0.7">
+    <circle cx="1480" cy="280" r="3"></circle>
+    <circle cx="1500" cy="320" r="2"></circle>
+    <circle cx="1520" cy="360" r="2.5"></circle>
+    <circle cx="1540" cy="420" r="1.8"></circle>
+  </g>
+
+  
+  <path d="M 0,1080 L 0,960 L 200,950 L 420,970 L 600,955 L 820,975 L 1000,960 L 1200,980 L 1400,965 L 1600,985 L 1800,970 L 1920,980 L 1920,1080 Z" fill="#1F1814" opacity="0.55"></path>
+</svg>
